@@ -32,6 +32,9 @@ const workerSource = path.resolve(__dirname, 'src', 'sw.js');
 module.exports = {
     // The Webpack config to use when compiling your react app for development or production.
     webpack: (config, env) => {
+        if (env !== 'production') {
+            return config;
+        }
         // we need 2 webpack configurations:
         // 1- for the service worker file.
         //    it needs to be processed by webpack (to include 3rd party modules), and the output must be a
