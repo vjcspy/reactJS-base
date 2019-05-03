@@ -17,11 +17,27 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "strict": true,
     "typeRoots": [
       "node_modules/@types",
       "src/types"
-    ]
+    ],
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "traceResolution": false,
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "pretty": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
   "include": [
     "src"
