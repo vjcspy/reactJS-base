@@ -4,6 +4,7 @@ const path = require('path');
 const _ = require('lodash');
 const fs = require('fs');
 
+// for more detail https://stackoverflow.com/questions/54770313/react-w-service-worker-push-notifications/55062427#55062427
 // from https://www.viget.com/articles/run-multiple-webpack-configs-sequentially/
 class WaitPlugin extends WebpackBeforeBuildPlugin {
     constructor(file, interval = 100, timeout = 60e3) {
